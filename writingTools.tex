@@ -1,0 +1,62 @@
+% !TEX root = writingTools.tex
+% !LPiL preamble = ./wtPreamble.tex
+% !LPiL postamble = ./wtPostamble.tex
+
+\lpilTitle{fp-writing}{
+  Finger Pieces : Writing Tools
+}
+\author{Stephen Gaito}
+
+\begin{abstract}
+  In this finger piece, we explore the variouse tools we use to write
+  diSimplex/LPiL documents.
+\end{abstract}
+
+\maketitle
+
+The diSimplex project as a whole is a very complex task, involving weaving
+together the research of many individuals across a wide range of disciplines.
+
+The aim of the diSimplex project is to understand how a finite
+\emph{computational} agent can \emph{model} reality. In particular what is the
+\emph{computational} basis for Mathematical Physics. Along the way we
+\emph{hope} to provide a foundation for Quantum Relativity.
+
+This means that various parts of the overall project are going to write,
+document, and prove corrent runable code. To describe this code as well as a
+foundation for Mathematical Physics, we will need a range of diagrams.
+
+To manage this complexity we use a number of tools, both
+`standard-off-the-shelf' as well as a number of bespoke additions where needed.
+This `finger-piece' attempts to document what these tools are and how they are
+used.
+
+\textbf{Editor} : We use the VSCode/VSCodium editing environment
+together with James Yu's excellent Latex-Workshop.
+
+\textbf{Typesetters} : We use \emph{both} the LaTeX \emph{and} the
+ConTeXt typesetting tools.
+\begin{itemize}
+  \item We use \textbf{standard LaTeX} for the bulk of the writing for two
+  reasons:
+  \begin{enumerate}
+    \item Unfortunately almost no journals currently accept written
+    submissions which use ConTeXt,
+    \item The tools available for writing using ConTeXt are not as well
+    developed as those for writing using LaTeX.
+  \end{enumerate}
+  \item We use \textbf{ConTeXt's excellent MetaFun diagram package} (based
+  upon MetaPost), for creating diagrams.
+\end{itemize}
+
+\textbf{Integration (VSCode)} : We use our own \verb|lpilMagicRunner| to help
+the LaTeX-Workshop typeset the LaTeX writing and the ConTeXt/MetaFun diagrams.
+
+\textbf{Integration (whole project)} : We use our own \verb|cfdoit| to manage
+the `compilation' of a whole document.
+
+\input{vscode}
+
+\input{typesetters}
+
+\input{integration}

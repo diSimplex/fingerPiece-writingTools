@@ -1,0 +1,45 @@
+% !TEX root = writingTools.tex
+% !LPiL preamble = ./wtPreamble.tex
+% !LPiL postamble = ./wtPostamble.tex
+
+\lpilSection{fp-wt-vscode}{Using VSCode/VSCodium}
+
+To use VSCode (or VSCodium):
+
+\begin{enumerate}
+  \item Install \href{https://code.visualstudio.com/}{VSCode} (or
+  \href{https://vscodium.com/}{VSCodium})
+  \item Install the
+  \href{https://open-vsx.org/extension/James-Yu/latex-workshop}{VSCode
+  LaTeX-Workshop extension}
+  \item Using \href{https://code.visualstudio.com/docs/getstarted/settings}{the
+  VSCode settings interface}
+  \begin{enumerate}
+    \item Set \verb|latex-workshop.latex.outdir| to \verb|build/latex|
+    \item Set \verb|latex-workshop.latex.tools| to 
+    \begin{verbatim}
+      [
+        {
+            "args": [
+                "%DOC%",
+                "%OUTDIR%"
+            ],
+            "command": "lpilMagicRunner",
+            "env": {},
+            "name": "lpilMagicRunner"
+        }
+      ]
+    \end{verbatim}
+    \item Set \verb|latex-workshop.latex.recipes| to
+    \begin{verbatim}
+      [
+        {
+            "name": "lpilMagicRunner",
+            "tools": [
+                "lpilMagicRunner"
+            ]
+        }
+      ]
+    \end{verbatim}
+  \end{enumerate}
+\end{enumerate}
