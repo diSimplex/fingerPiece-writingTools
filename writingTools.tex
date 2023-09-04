@@ -22,9 +22,9 @@ The aim of the diSimplex project is to understand how a finite
 \emph{computational} basis for Mathematical Physics. Along the way we
 \emph{hope} to provide a foundation for Quantum Relativity.
 
-This means that various parts of the overall project are going to write,
-document, and prove corrent runable code. To describe this code as well as a
-foundation for Mathematical Physics, we will need a range of diagrams.
+This means that various parts of the overall project are going to require that
+we write, document, and prove corrent runable code. To describe this code as
+well as a foundation for Mathematical Physics, we will need a range of diagrams.
 
 To manage this complexity we use a number of tools, both
 `standard-off-the-shelf' as well as a number of bespoke additions where needed.
@@ -42,18 +42,20 @@ ConTeXt typesetting tools.
   \begin{enumerate}
     \item Unfortunately almost no journals currently accept written
     submissions which use ConTeXt,
-    \item The tools available for writing using ConTeXt are not as well
-    developed as those for writing using LaTeX.
+    \item The tools available for writing ConTeXt documents, certainly using
+    VSCode, are not as well developed as those for writing using LaTeX.
   \end{enumerate}
   \item We use \textbf{ConTeXt's excellent MetaFun diagram package} (based
   upon MetaPost), for creating diagrams.
 \end{itemize}
 
 \textbf{Integration (VSCode)} : We use our own \verb|lpilMagicRunner| to help
-the LaTeX-Workshop typeset the LaTeX writing and the ConTeXt/MetaFun diagrams.
+the LaTeX-Workshop typeset the LaTeX writing, the ConTeXt/MetaFun diagrams as
+well as pygmentize the various chunks of code.
 
 \textbf{Integration (whole project)} : We use our own \verb|cfdoit| to manage
-the `compilation' of a whole document.
+the `compilation' of a whole document (including compiling and verifying the
+code).
 
 \input{vscode}
 

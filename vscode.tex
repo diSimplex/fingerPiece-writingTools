@@ -17,29 +17,29 @@ To use VSCode (or VSCodium):
   \begin{enumerate}
     \item Set \verb|latex-workshop.latex.outdir| to \verb|build/latex|
     \item Set \verb|latex-workshop.latex.tools| to 
-    \begin{verbatim}
-      [
-        {
-            "args": [
-                "%DOC%",
-                "%OUTDIR%"
-            ],
-            "command": "lpilMagicRunner",
-            "env": {},
-            "name": "lpilMagicRunner"
-        }
-      ]
-    \end{verbatim}
+\begin{lpil:json}{latexTools.json}
+  [
+    {
+      "args": [
+        "%DOC%",
+        "%OUTDIR%"
+      ],
+      "command": "lpilMagicRunner",
+      "env": {},
+      "name": "lpilMagicRunner"
+    }
+  ]
+\end{lpil:json}
     \item Set \verb|latex-workshop.latex.recipes| to
-    \begin{verbatim}
-      [
-        {
-            "name": "lpilMagicRunner",
-            "tools": [
-                "lpilMagicRunner"
-            ]
-        }
+\begin{lpil:json}{latexRecipes.json}
+  [
+    {
+      "name": "lpilMagicRunner",
+      "tools": [
+        "lpilMagicRunner"
       ]
-    \end{verbatim}
+    }
+  ]
+\end{lpil:json}
   \end{enumerate}
 \end{enumerate}
