@@ -1,0 +1,25 @@
+# This is the LPiT definition YAML file for the <<>> document
+
+doc:
+  id: fp-writing
+  name: writingTools
+  type: paper
+
+title:
+  short: "Finger Pieces : Writing Tools"
+  long: "Finger Pieces : Writing Tools"
+
+authors:
+  - given: Stephen
+    family: Gaito
+    order: givenFamily
+    email: stephen@perceptisys.co.uk
+
+# packages:
+#   - location: <<>> # optional
+#     name: <<>
+#     version: <<>>
+
+abstract: |
+  In this finger piece, we explore the variouse tools we use to write
+  diSimplex/LPiL documents.

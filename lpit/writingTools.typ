@@ -1,19 +1,28 @@
-//% !TEX root = writingTools.tex
-//% !LPiL preamble = ./wtPreamble.tex
-//% !LPiL postamble = ./wtPostamble.tex
-//% !LPiL collection = fingerPieces
+
+///////////////////////////////////////////////
+// Imports
+
+#import "@local/lpit-publisher-papers:0.2.0" : *
+
+///////////////////////////////////////////////
+// Front matter
+
+#setupDoc(yaml("lpit.yaml"))
 
 //\lpilTitle{fp-writing}{
 //  Finger Pieces : Writing Tools
 //}
 //\author{Stephen Gaito}
 
-//\begin{abstract}
+#abstract([
   In this finger piece, we explore the variouse tools we use to write
   diSimplex/LPiL documents.
-//\end{abstract}
+])
 
 //\maketitle
+
+///////////////////////////////////////////////
+// Body
 
 The diSimplex project as a whole is a very complex task, involving weaving
 together the research of many individuals across a wide range of disciplines.
@@ -40,13 +49,13 @@ ConTeXt typesetting tools.
 
   - We use #strong[standard LaTeX] for the bulk of the writing for two
     reasons:
-  
+
     + Unfortunately almost no journals currently accept written
     submissions which use ConTeXt,
-    
+
     + The tools available for writing ConTeXt documents, certainly using
     VSCode, are not as well developed as those for writing using LaTeX.
-    
+
   - We use #strong[ConTeXt's excellent MetaFun diagram package] (based
     upon MetaPost), for creating diagrams.
 
@@ -64,3 +73,5 @@ code).
 
 #include "integration.typ"
 
+/////////////////////////////////////////////////////////////////
+// End matter
